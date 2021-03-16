@@ -10,13 +10,14 @@
 </head>
 
 <body>
-    <i class="fas fa-anchor"></i>
-    <header>
-        <h1 class="text-center bg-secondary text-primary p-3">Emporium</h1>
+    <h1 class="text-center bg-secondary text-primary p-3">Emporium</h1>
+    <header class="container">
+
+        <i class="far fa-check-circle"></i>
 
         <div class="d-flex justify-content-center">
-            <button type="button" class="btn btn-primary mx-3">Learn More</button>
-            <button type="button" class="btn btn-primary mx-3">Learn More</button>
+            <button type="button" class="btn btn-primary mx-3 text-white">Learn More</button>
+            <button type="button" class="btn btn-tertiary mx-3">Learn More</button>
         </div>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem modi assumenda vel aperiam ratione, rerum
@@ -24,9 +25,48 @@
         <p class="ff-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, nam!</p>
     </header>
 
-    <section>
+    <section class="container">
         <h3>Recents Products</h3>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            <div class="col">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="./public/img/products/product-bag-2-700x500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div class="card-text product-info">
+                            <span class="card-text product-name">Women Bag</span>
+                            <div class="product-prices">
+                                <span class="old-price">$420.00</span>
+                                <span class="new-price">$420.00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="./public/img/products/product-bag-700x500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <span class="card-text"></span>
+                        <span c></span>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card mx-auto" style="width: 18rem;">
+                    <img src="./public/img/products/product-jacket-700x500.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's
+                            content.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
     </section>
+
+
 
     <script src="./node_modules/@popperjs/core/dist/umd/popper.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>

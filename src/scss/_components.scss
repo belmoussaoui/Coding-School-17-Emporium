@@ -11,6 +11,29 @@ h3 {
     margin-bottom: 1rem;
 }
 
-// button {
+button {
+    text-transform: uppercase;
+    font-size: 13px !important;
+}
 
-// }
+.card {
+    border: none;
+    .card-body {
+        text-align: center;
+        .product-info {
+            display: flex;
+            flex-direction: column;
+            font-size: 14px;
+            font-weight: 600;
+            .product-name {
+                letter-spacing: -1px;
+            }
+            .product-prices {
+                .old-price {
+                    color: #6d6a6a;
+                    text-decoration: line-through;
+                }
+            }
+        }
+    }
+}
