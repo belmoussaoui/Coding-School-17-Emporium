@@ -1,0 +1,11 @@
+@import "./variables";
+@import "./components";
+@import "./pages/header";
+
+body {
+    font-family: $font-1;
+}
+
+.ff-1 {
+    font-family: $font-1;
+}
