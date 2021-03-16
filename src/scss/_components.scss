@@ -18,22 +18,120 @@ button {
 
 .card {
     border: none;
-    .card-body {
-        text-align: center;
-        .product-info {
+    font-size: 14px;
+}
+
+.card-head {
+    font-size: 12px;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    &:hover figcaption {
+        transform: translateY(0%);
+        transition: all 0.3s ease;
+    }
+    &:hover img {
+        padding: 0px;
+        transition: all 0.5s ease;
+        transform: scale(1);
+    }
+    img {
+        transition: all 0.5s ease;
+        transform: scale(0.95);
+        border: none;
+        border-radius: 0px;
+    }
+    figcaption {
+        transition: all 0.3s ease;
+        height: 33%;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        transform: translateY(101%);
+        opacity: 0.85;
+        div {
+            color: white;
+            background-color: $primary;
+            width: 50%;
+            height: 100%;
+            line-height: 100%;
             display: flex;
-            flex-direction: column;
-            font-size: 14px;
-            font-weight: 600;
-            .product-name {
-                letter-spacing: -1px;
-            }
-            .product-prices {
-                .old-price {
-                    color: #6d6a6a;
-                    text-decoration: line-through;
-                }
+            justify-content: center;
+            align-items: center;
+            padding: 0;
+            margin: 0;
+            &:first-child {
+                background-color: black;
             }
         }
     }
+}
+
+.card-body {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .product-sale {
+        background-color: $primary;
+        border-radius: 50%;
+        display: table-cell;
+        width: 60px;
+        height: 60px;
+        text-transform: uppercase;
+        color: white;
+        vertical-align: middle;
+    }
+}
+
+.product-info {
+    display: flex;
+    flex-direction: column;
+    font-weight: 600;
+    .product-name {
+        letter-spacing: -1px;
+    }
+    .product-prices {
+        padding: 10px 0px;
+        .old-price {
+            color: #6d6a6a;
+            text-decoration: line-through;
+        }
+        .new-price {
+            color: $primary;
+        }
+    }
+}
+
+.service {
+    height: 200px;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    span {
+        color: white;
+        font-size: 32px;
+        position: relative;
+        &:after {
+            content: "";
+            position: absolute;
+            border-bottom: 3px solid white;
+            width: 150%;
+            bottom: 0;
+            left: -25%;
+        }
+    }
+}
+
+#service-1 {
+    background-image: url("../../public/img/services/service-1.jpg");
+}
+#service-2 {
+    background-image: url("../../public/img/services/service-2.jpg");
+}
+#service-3 {
+    background-image: url("../../public/img/services/slider-3.jpg");
 }
