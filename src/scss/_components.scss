@@ -28,7 +28,6 @@ button {
     text-align: center;
     overflow: hidden;
     &:hover figcaption {
-        visibility: visible;
         height: 33%;
         transition: all 0.3s ease;
     }
@@ -44,7 +43,7 @@ button {
         border-radius: 0px;
     }
     figcaption {
-        visibility: hidden;
+        overflow: hidden;
         transition: all 0.3s ease;
         height: 0%;
         width: 100%;

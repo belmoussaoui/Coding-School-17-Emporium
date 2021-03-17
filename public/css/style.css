@@ -6204,7 +6204,6 @@ button {
 }
 
 .card-head:hover figcaption {
-  visibility: visible;
   height: 33%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -6228,7 +6227,7 @@ button {
 }
 
 .card-head figcaption {
-  visibility: hidden;
+  overflow: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: 0%;
@@ -6417,6 +6416,20 @@ nav .btn-connexion {
 #recents-products h3 {
   margin-top: 100px;
   margin-bottom: 50px;
+}
+
+#discover {
+  height: 600px;
+  background-image: url("../../../public/img/cta-bg.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+#discover h2 {
+  color: white;
+  font-size: 44px;
+  margin-bottom: 20px;
 }
 
 body {
