@@ -6277,6 +6277,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding: 1rem 0.5rem;
 }
 
 .card-body .product-sale {
@@ -6291,6 +6292,7 @@ button {
 }
 
 .product-info {
+  font-size: 13px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6358,6 +6360,63 @@ button {
 
 #service-3 {
   background-image: url("../../public/img/services/slider-3.jpg");
+}
+
+.slider {
+  overflow-x: hidden;
+  position: relative;
+}
+
+.slider .slider-inner {
+  -webkit-transition: -webkit-transform 0.33s;
+  transition: -webkit-transform 0.33s;
+  transition: transform 0.33s;
+  transition: transform 0.33s, -webkit-transform 0.33s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.slider .slider-inner .slider-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0;
+          flex: 0 0;
+  -ms-flex-preferred-size: 25%;
+      flex-basis: 25%;
+}
+
+.slider .slider-indicators {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  bottom: 3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.slider .slider-indicators li {
+  list-style: none;
+  width: 10px;
+  height: 10px;
+  border: 1px solid transparent;
+  background-color: #fff;
+  cursor: pointer;
+  opacity: 0.5;
+  margin: 0 10px;
+  border-radius: 100% !important;
+}
+
+.slider .slider-indicators li.active {
+  opacity: 1;
+  background-color: black;
 }
 
 h1 {
@@ -6430,6 +6489,20 @@ nav .btn-connexion {
   color: white;
   font-size: 44px;
   margin-bottom: 20px;
+}
+
+#fashion-products {
+  max-width: 900px;
+}
+
+#fashion-products h3 {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+#fashion-products img {
+  -webkit-transform: scale(1);
+          transform: scale(1);
 }
 
 body {
