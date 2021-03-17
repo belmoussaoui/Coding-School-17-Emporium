@@ -10971,6 +10971,17 @@ nav .btn-connexion {
   font-size: 11px !important;
 }
 
+nav.nav-fixed {
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  border-bottom: solid 1px black;
+}
+
+nav.nav-fixed .logo {
+  display: unset;
+}
+
 #shop-emporium h2 {
   font-size: 48px;
   color: #cd504b;

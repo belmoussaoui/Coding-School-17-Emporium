@@ -23,7 +23,8 @@ function onIndicator(e) {
 }
 
 function toogleActive() {
-    // indicators[index].classList.toggle("active");
+    if (index >= indicators.length) return;
+    indicators[index].classList.toggle("active");
 }
 
 function numItems() {
@@ -46,22 +47,16 @@ function onResize() {
     }
     indicators = [];
     createIndicators();
+    gotoItem(index);
     index = Math.max(Math.min(indicators.length - 1, index), 0);
     gotoItem(index);
 }
 
-let logo = document.querySelector(".logo");
 let nav = document.querySelector("nav");
 window.addEventListener("scroll", (e) => {
     if (window.scrollY > 167) {
-        logo.style.display = "unset";
-        nav.style.position = "fixed";
-        nav.style.zIndex = "1";
-        nav.style.top = "0";
-        nav.style.borderBottom = "solid 1px black";
+        nav.classList.add("nav-fixed");
     } else {
-        logo.style.display = "none";
-        nav.style.position = "static";
-        nav.style.borderBottom = "none";
+        nav.classList.remove("nav-fixed");
     }
 });
