@@ -6388,6 +6388,29 @@ nav .btn-connexion {
   border-radius: 0;
 }
 
+#shop-emporium h2 {
+  font-size: 48px;
+  color: #cd504b;
+}
+
+#shop-emporium button {
+  padding: 10px 40px;
+  border-radius: 50px;
+}
+
+#shop-emporium img {
+  width: 300px;
+}
+
+#shop-emporium p {
+  padding: 10px 0;
+  font-size: 13px;
+}
+
+#shop-emporium div:first-of-type {
+  margin-left: 200px;
+}
+
 body {
   font-family: "Poppins", sans-serif;
 }

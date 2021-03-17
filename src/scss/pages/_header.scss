@@ -22,3 +22,26 @@ nav {
         border-radius: 0;
     }
 }
+
+#shop-emporium {
+    h2 {
+        font-size: 48px;
+        color: $primary;
+    }
+    button {
+        padding: 10px 40px;
+        border-radius: 50px;
+    }
+    img {
+        width: 300px;
+    }
+    p {
+        padding: 10px 0;
+        font-size: 13px;
+    }
+    div {
+        &:first-of-type {
+            margin-left: 200px;
+        }
+    }
+}
