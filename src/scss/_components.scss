@@ -18,15 +18,19 @@ button {
 }
 
 .card {
+    background-color: transparent;
     border: none;
     font-size: 14px;
+    border-radius: 0px;
 }
 
 .card-head {
+    background-color: transparent;
     font-size: 12px;
     position: relative;
     text-align: center;
     overflow: hidden;
+    background-color: transparent;
     &:hover figcaption {
         height: 33%;
         transition: all 0.3s ease;
@@ -71,6 +75,7 @@ button {
 }
 
 .card-body {
+    background-color: transparent;
     text-align: center;
     display: flex;
     align-items: center;
@@ -92,9 +97,10 @@ button {
     font-size: 13px;
     display: flex;
     flex-direction: column;
-    font-weight: 600;
     .product-name {
-        letter-spacing: -1px;
+        font-weight: 600;
+        letter-spacing: 0px;
+        font-size: 14px;
     }
     .product-prices {
         padding: 10px 0px;

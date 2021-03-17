@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Utilities v5.0.0-beta2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10676,15 +10677,19 @@ button {
 }
 
 .card {
+  background-color: transparent;
   border: none;
   font-size: 14px;
+  border-radius: 0px;
 }
 
 .card-head {
+  background-color: transparent;
   font-size: 12px;
   position: relative;
   text-align: center;
   overflow: hidden;
+  background-color: transparent;
 }
 
 .card-head:hover figcaption {
@@ -10751,6 +10756,7 @@ button {
 }
 
 .card-body {
+  background-color: transparent;
   text-align: center;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -10784,11 +10790,12 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-weight: 600;
 }
 
 .product-info .product-name {
-  letter-spacing: -1px;
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-size: 14px;
 }
 
 .product-info .product-prices {
@@ -10948,8 +10955,12 @@ h1 {
   font-size: 42px;
 }
 
+#head  {
+  height: 190px;
+}
+
 nav {
-  background-color: transparent;
+  background-color: white;
   height: 80px;
 }
 
@@ -11051,7 +11062,8 @@ nav.nav-fixed .logo {
   font-size: 1.5rem;
 }
 
-.learn-block h4 {
+.learn-block span {
+  display: block;
   font-size: 13px;
   font-weight: 600;
   margin-top: 30px;
@@ -11110,5 +11122,34 @@ nav.nav-fixed .logo {
 
 body {
   font-family: "Poppins", sans-serif;
+}
+
+body.dark-mode {
+  background-color: #212529;
+}
+
+body.dark-mode h1,
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4,
+body.dark-mode h5,
+body.dark-mode h6 {
+  color: white;
+}
+
+body.dark-mode nav {
+  background-color: #212529;
+}
+
+body.dark-mode nav .nav-link {
+  color: white !important;
+}
+
+body.dark-mode nav.nav-fixed {
+  border-bottom: solid #f8f9fa 1px;
+}
+
+body.dark-mode nav .logo {
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

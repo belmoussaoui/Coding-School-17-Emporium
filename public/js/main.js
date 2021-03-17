@@ -53,10 +53,19 @@ function onResize() {
 }
 
 let nav = document.querySelector("nav");
+let distance = 167;
 window.addEventListener("scroll", (e) => {
-    if (window.scrollY > 167) {
+    if (window.scrollY > distance) {
         nav.classList.add("nav-fixed");
     } else {
         nav.classList.remove("nav-fixed");
     }
+});
+
+let mode = document.querySelectorAll(".btn-toggle");
+mode[0].addEventListener("click", () => {
+    document.body.classList.remove("dark-mode");
+});
+mode[1].addEventListener("click", () => {
+    document.body.classList.add("dark-mode");
 });
