@@ -6378,14 +6378,16 @@ nav a {
 }
 
 nav .btn-toggle {
-  width: 20px;
-  height: 20px;
+  width: 16px;
+  height: 16px;
   border: 1px solid #f3f3f3;
   border-radius: 5px;
 }
 
 nav .btn-connexion {
   border-radius: 0;
+  padding: 5px 8px;
+  font-size: 11px !important;
 }
 
 #shop-emporium h2 {
@@ -6404,11 +6406,7 @@ nav .btn-connexion {
 
 #shop-emporium p {
   padding: 10px 0;
-  font-size: 13px;
-}
-
-#shop-emporium div:first-of-type {
-  margin-left: 200px;
+  font-size: 12px;
 }
 
 body {
