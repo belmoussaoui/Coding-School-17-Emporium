@@ -80,8 +80,8 @@ button {
         background-color: $primary;
         border-radius: 50%;
         display: table-cell;
-        width: 60px;
-        height: 60px;
+        width: 55px;
+        height: 55px;
         text-transform: uppercase;
         color: white;
         vertical-align: middle;
@@ -143,6 +143,7 @@ button {
 .slider {
     overflow-x: hidden;
     position: relative;
+    min-height: 280px;
     .slider-inner {
         transition: transform 0.33s;
         display: flex;
@@ -150,23 +151,31 @@ button {
         flex-direction: row;
         .slider-item {
             flex: 0 0;
-            flex-basis: 25%;
+            flex-basis: 100%;
+            @include media-breakpoint-up(sm) {
+                flex-basis: 50%;
+            }
+            @include media-breakpoint-up(md) {
+                flex-basis: 33%;
+            }
+            @include media-breakpoint-up(lg) {
+                flex-basis: 25%;
+            }
         }
     }
     .slider-indicators {
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
-        bottom: 3%;
+        bottom: -0%;
         display: flex;
         li {
             list-style: none;
-            width: 10px;
-            height: 10px;
-            border: 1px solid transparent;
-            background-color: #fff;
+            width: 12px;
+            height: 12px;
+            border: 1px solid black;
+            background-color: white;
             cursor: pointer;
-            opacity: 0.5;
             margin: 0 10px;
             border-radius: 100% !important;
             &.active {
@@ -185,4 +194,11 @@ button {
     color: #646c74;
     margin-bottom: 5px;
     margin-right: 4px;
+}
+
+.logo {
+    margin-left: 10px;
+    font-size: 22px;
+    font-weight: 600;
+    display: none;
 }
