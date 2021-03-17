@@ -9,6 +9,7 @@ h3 {
     font-weight: 600;
     letter-spacing: -1px;
     margin-bottom: 1rem;
+    font-size: 24px;
 }
 
 button {
@@ -27,7 +28,8 @@ button {
     text-align: center;
     overflow: hidden;
     &:hover figcaption {
-        transform: translateY(0%);
+        visibility: visible;
+        height: 33%;
         transition: all 0.3s ease;
     }
     &:hover img {
@@ -42,14 +44,14 @@ button {
         border-radius: 0px;
     }
     figcaption {
+        visibility: hidden;
         transition: all 0.3s ease;
-        height: 33%;
+        height: 0%;
         width: 100%;
         position: absolute;
         bottom: 0;
         display: flex;
         align-items: center;
-        transform: translateY(101%);
         opacity: 0.85;
         div {
             color: white;
@@ -111,6 +113,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-size: cover;
     span {
         color: white;
         font-size: 32px;

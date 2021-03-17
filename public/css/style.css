@@ -6183,6 +6183,7 @@ h3 {
   font-weight: 600;
   letter-spacing: -1px;
   margin-bottom: 1rem;
+  font-size: 24px;
 }
 
 button {
@@ -6203,8 +6204,8 @@ button {
 }
 
 .card-head:hover figcaption {
-  -webkit-transform: translateY(0%);
-          transform: translateY(0%);
+  visibility: visible;
+  height: 33%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
@@ -6227,9 +6228,10 @@ button {
 }
 
 .card-head figcaption {
+  visibility: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  height: 33%;
+  height: 0%;
   width: 100%;
   position: absolute;
   bottom: 0;
@@ -6239,8 +6241,6 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-transform: translateY(101%);
-          transform: translateY(101%);
   opacity: 0.85;
 }
 
@@ -6331,6 +6331,7 @@ button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-size: cover;
 }
 
 .service span {
@@ -6407,6 +6408,15 @@ nav .btn-connexion {
 #shop-emporium p {
   padding: 10px 0;
   font-size: 12px;
+}
+
+#recents-products {
+  max-width: 900px;
+}
+
+#recents-products h3 {
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
 body {
