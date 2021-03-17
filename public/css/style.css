@@ -6505,11 +6505,33 @@ nav .btn-connexion {
           transform: scale(1);
 }
 
-body {
-  font-family: "Poppins", sans-serif;
+.learn-block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 50px;
+  text-align: center;
 }
 
-.ff-1 {
+.learn-block i {
+  font-size: 1.5rem;
+}
+
+.learn-block h4 {
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.learn-block p {
+  line-height: 1.5rem;
+  font-size: 13px;
+}
+
+body {
   font-family: "Poppins", sans-serif;
 }
 /*# sourceMappingURL=style.css.map */
