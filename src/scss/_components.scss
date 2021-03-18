@@ -18,6 +18,7 @@ button {
 }
 
 .card {
+    max-width: 23rem;
     background-color: transparent;
     border: none;
     font-size: 14px;
@@ -31,7 +32,7 @@ button {
     text-align: center;
     overflow: hidden;
     background-color: transparent;
-    &:hover figcaption {
+    &:hover .caption {
         height: 33%;
         transition: all 0.3s ease;
     }
@@ -46,7 +47,7 @@ button {
         border: none;
         border-radius: 0px;
     }
-    figcaption {
+    .caption {
         overflow: hidden;
         transition: all 0.3s ease;
         height: 0%;
@@ -121,6 +122,7 @@ button {
     align-items: center;
     justify-content: center;
     background-size: cover;
+    overflow: hidden;
     span {
         color: white;
         font-size: 32px;

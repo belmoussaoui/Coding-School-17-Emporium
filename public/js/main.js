@@ -69,3 +69,16 @@ mode[0].addEventListener("click", () => {
 mode[1].addEventListener("click", () => {
     document.body.classList.add("dark-mode");
 });
+
+let signUp = document.getElementById("sign-up-inner");
+let register = document.getElementById("register-inner");
+
+function onRegister() {
+    register.classList.remove("visually-hidden");
+    signUp.classList.add("visually-hidden");
+}
+
+function onSignUp() {
+    signUp.classList.remove("visually-hidden");
+    register.classList.add("visually-hidden");
+}

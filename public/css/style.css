@@ -10676,6 +10676,7 @@ button {
 }
 
 .card {
+  max-width: 23rem;
   background-color: transparent;
   border: none;
   font-size: 14px;
@@ -10691,7 +10692,7 @@ button {
   background-color: transparent;
 }
 
-.card-head:hover figcaption {
+.card-head:hover .caption {
   height: 33%;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -10714,7 +10715,7 @@ button {
   border-radius: 0px;
 }
 
-.card-head figcaption {
+.card-head .caption {
   overflow: hidden;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -10731,7 +10732,7 @@ button {
   opacity: 0.85;
 }
 
-.card-head figcaption div {
+.card-head .caption div {
   color: white;
   background-color: #cd504b;
   width: 50%;
@@ -10750,7 +10751,7 @@ button {
   margin: 0;
 }
 
-.card-head figcaption div:first-child {
+.card-head .caption div:first-child {
   background-color: black;
 }
 
@@ -10823,6 +10824,7 @@ button {
       -ms-flex-pack: center;
           justify-content: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .service span {
@@ -11154,5 +11156,9 @@ body.dark-mode nav .logo {
 
 body.dark-mode nav .navbar-toggler {
   background-color: white;
+}
+
+body.dark-mode .modal-content {
+  background-color: #212529;
 }
 /*# sourceMappingURL=style.css.map */
