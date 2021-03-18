@@ -1,4 +1,3 @@
-@charset "UTF-8";
 /*!
  * Bootstrap Utilities v5.0.0-beta2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10955,13 +10954,12 @@ h1 {
   font-size: 42px;
 }
 
-#head  {
-  height: 190px;
+#head {
+  height: 110px;
 }
 
 nav {
   background-color: white;
-  height: 80px;
 }
 
 nav a {
@@ -11122,6 +11120,7 @@ nav.nav-fixed .logo {
 
 body {
   font-family: "Poppins", sans-serif;
+  max-width: 1440px;
 }
 
 body.dark-mode {
@@ -11151,5 +11150,9 @@ body.dark-mode nav.nav-fixed {
 
 body.dark-mode nav .logo {
   color: white;
+}
+
+body.dark-mode nav .navbar-toggler {
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

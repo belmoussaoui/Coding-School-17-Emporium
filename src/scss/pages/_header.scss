@@ -5,13 +5,12 @@ h1 {
     font-size: 42px;
 }
 
-#head  {
-    height: 190px;
+#head {
+    height: 110px;
 }
 
 nav {
     background-color: white;
-    height: 80px;
     a {
         text-transform: uppercase;
         font-size: 13px;
@@ -55,9 +54,9 @@ nav.nav-fixed {
         padding: 10px 0;
         font-size: 12px;
     }
-    div {
-        &:first-of-type {
-            // margin-left: 200px;
-        }
-    }
+    // div {
+    //     &:first-of-type {
+    //         // margin-left: 200px;
+    //     }
+    // }
 }

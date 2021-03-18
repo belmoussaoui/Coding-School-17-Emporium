@@ -12,6 +12,7 @@
 
 body {
     font-family: $font-1;
+    max-width: 1440px;
 }
 
 body.dark-mode {
@@ -34,6 +35,9 @@ body.dark-mode {
         }
         .logo {
             color: white;
+        }
+        .navbar-toggler {
+            background-color: white;
         }
     }
 }
